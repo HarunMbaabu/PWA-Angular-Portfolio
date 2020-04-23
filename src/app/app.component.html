@@ -274,5 +274,8 @@
   </div>
 </div>
 </div></div>
+  <button *ngIf="Pwa.promptEvent" (click)="installPwa()">
+  Install
+</button>
 </div>
 <router-outlet></router-outlet>
