@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  constructor(public Pwa: PwaService) {}
+  installPwa(): void {
+  this.Pwa.promptEvent.prompt();
+}
 }
